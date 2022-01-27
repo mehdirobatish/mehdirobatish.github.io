@@ -1,0 +1,119 @@
+:root {
+  --base1: rgb(180,180,180);
+  --base2: rgb(140,140,140);
+  --base3: rgb(100,100,100);
+  --base4: #2b373e;
+  --base5: #1b262c;
+  --base6: #b3a724;
+}
+
+body {
+  font-family: Cochin, Georgia, Times, 'Times New Roman', serif;
+  color: white;
+}
+
+#scene-tabbar, #scene-body {
+  min-height: 100vh;
+}
+
+#scene-tabbar {
+  background: var(--base1);
+  background: linear-gradient(180deg, var(--base1) 0%, var(--base2) 53%, var(--base3) 100%);  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  overflow: scroll;
+}
+
+a {
+  color: var(--base6);
+}
+
+
+#scene-tabbar #my-img {
+  width: 70%;
+  border-radius: 50%;
+}
+
+.list-view img {
+  width: 40px;
+}
+
+.list-view a {
+  color: white;
+}
+
+.contact-item {
+  display: inline;
+  color: black;
+  font-size: 2em;
+  margin: 0 0.4em 0 0.4em;
+}
+
+#scene-tabbar .list-view {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#scene-tabbar .list-item {
+  padding: 0.5em;
+  margin: 0.2em;
+  background-color: var(--base6);
+  width: 90%;
+}
+
+#scene-tabbar .list-item:hover {
+  background-color: var(--base4);
+  cursor: pointer;
+}
+
+#scene-body {
+  background-color: var(--base4);
+  height: inherit;
+  font-size: 1em;
+  height: 100vh;
+  overflow: scroll;
+}
+
+@media only screen and (max-width: 777px) {
+  #scene-tabbar {
+    height: 100%;
+    overflow: unset;
+  }
+  #scene-body {
+    height: 100%;
+    overflow: unset;
+  }
+}
+
+
+#scene-body .col {
+  font-size: 1em;
+}
+
+#scene-body section {
+  display: none;
+}
+
+.col-item-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.project-card {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.project-card img, .project-card video {
+  padding: 1em;
+  width: 100%;
+  border-radius: 2em;
+}
