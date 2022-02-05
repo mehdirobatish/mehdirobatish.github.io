@@ -1,15 +1,15 @@
 :root {
-  --base1: rgb(180,180,180);
-  --base2: rgb(140,140,140);
-  --base3: rgb(100,100,100);
-  --base4: #2b373e;
-  --base5: #1b262c;
-  --base6: #b3a724;
+  --base1: #379683;
+  --base2: #5cdb95;
+  --base3: #8ee4af;
+  --base4: #edf5e1;
+  --base5: #05386b;
+  --base6: #8ee4af;
 }
 
 body {
   font-family: Cochin, Georgia, Times, 'Times New Roman', serif;
-  color: white;
+  color: #05386b;
 }
 
 #scene-tabbar, #scene-body {
@@ -17,16 +17,22 @@ body {
 }
 
 #scene-tabbar {
-  background: var(--base1);
-  background: linear-gradient(180deg, var(--base1) 0%, var(--base2) 53%, var(--base3) 100%);  display: flex;
+  background: var(--base5);
+  /* background: linear-gradient(180deg, var(--base1) 0%, var(--base2) 53%, var(--base3) 100%);  display: flex; */
   align-items: center;
   flex-direction: column;
   height: 100vh;
   overflow: scroll;
+  color: rgb(149, 0, 112);
+}
+
+#my-name {
+  color: rgb(208, 87, 178);
+
 }
 
 a {
-  color: var(--base6);
+  color: var(--base1);
 }
 
 
@@ -116,4 +122,10 @@ a {
   padding: 1em;
   width: 100%;
   border-radius: 2em;
+}
+
+#hobbies img {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  max-width: 500px;
 }
