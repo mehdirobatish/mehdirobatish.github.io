@@ -1,7 +1,7 @@
 let current = 0
-let selected = '#379683'
-let unselected = '#8ee4af'
-let hover = '#5cdb95'
+let selected = 'rgba(161,139,159,0.9)'
+let unselected = '#4c9494'
+let hover = 'rgba(255,255,255,0.2)'
 
 let changeTab = () => {
     Array.from(document.querySelectorAll("#scene-body section")).forEach((el, idx) => {
