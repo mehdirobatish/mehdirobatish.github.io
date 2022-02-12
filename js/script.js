@@ -38,6 +38,6 @@ Array.from(document.querySelectorAll("#scene-tabbar .list-item")).forEach((el, i
     })
 })
 
-// let xhttp = new XMLHttpRequest();
-// xhttp.open("POST", "https://secret-wildwood-85596.herokuapp.com/", true);
-// xhttp.send();
+let xhttp = new XMLHttpRequest();
+xhttp.open("POST", "https://secret-wildwood-85596.herokuapp.com/", true);
+xhttp.send();
